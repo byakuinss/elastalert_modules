@@ -1,8 +1,8 @@
-## elastalert_modules
+# elastalert_modules
 elastalert enhancements for my projects
 
-### Alert Context Enhancement
-##### converttimezone.py
+## Alert Context Enhancement
+### converttimezone.py
 Convert timezone from UTC to local timezone.
 Usage: add into rule config file
 ```
@@ -10,7 +10,7 @@ match_enhancements:
 - "elastalert_modules.my_enhancements.TimeEnhancement"
 ```
 
-##### convertpct.py #
+### convertpct.py #
 Convert pct of metricbeat field to x% format (ex. 0.961 -> 96.1%)
 Usage: add into rule config file
 ```
@@ -65,8 +65,8 @@ Metricbeat document in elasticsearch:
         ...
 ```
 
-### Alerter #
-##### Pushover Alerter #
+## Alerter #
+### Pushover Alerter #
 A simple alerter to push alert to Pushover API through HTTP POST.
 `` token `` and `` user `` are required. For detailed information please reference to [Pushover API](https://pushover.net/api#messages)
 Usage: add into rule config
@@ -80,7 +80,7 @@ pushover_parameter:
   # device: "your_device" 
 ```
 
-### Reminder
+## Reminder
 If you change anything in elastalert_modules, you need to run the `` setup.py `` to re-install elastalert.
 And make sure there is no any errors when installing elastalert.
 ```
